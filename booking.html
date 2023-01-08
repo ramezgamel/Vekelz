@@ -354,6 +354,11 @@
   <script>
     let button = document.querySelector(".heart")
     let wrapper = document.querySelector(".wrapper")
+    let filter = document.querySelector(".filter .icons")
+    filter.addEventListener("click", (event) => {
+      event.target.classList.toggle("active")
+    });
+
     wrapper.addEventListener("click", (event) => {
       console.log(event.target)
       button.children[0].classList.toggle("active")
