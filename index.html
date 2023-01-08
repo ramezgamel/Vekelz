@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  </head>
+  <body>
+    <div class="appTitle">
+      <div>Dashboard</div>
+    </div>
+    <div class="page">
+      <div class="sidebar">
+        <div>
+          <h3 class="txt-center mt-0 p-relative">Motiv.</h3>
+          <ul>
+            <li>
+              <a href="index.html">
+				  			<i class="fa-solid fa-chart-bar fa-fw"></i>
+                <span class="hide-mobile">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+				  			<i class="fa-solid fa-gear fa-fw"></i>
+                <span class="hide-mobile">Assets</span>
+              </a>
+            </li>
+            <li>
+              <a href="./booking.html">
+				  			<i class="fa-solid fa-car"></i>
+                <span class="hide-mobile">Booking</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+				  			<i class="fa-solid fa-bag-shopping"></i>
+                <span class="hide-mobile">Sell Cars</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+				  			<i class="fa-solid fa-cart-shopping"></i>
+                <span class="hide-mobile">Buy Cars</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+				  			<i class="fa-solid fa-scissors"></i>
+                <span class="hide-mobile">Service</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+				  			<i class="fa-regular fa-calendar"></i>
+                <span class="hide-mobile">Calender</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+				  			<i class="fa-regular fa-message"></i>
+                <span class="hide-mobile">Messages</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">
+							<i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+							<i class="fa-solid fa-right-from-bracket"></i>
+              <span class="hide-mobile">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+				<div class="header between-flex">
+					<div class="search">
+						<input type="search" placeholder="Search">
+					</div>
+					<div class="icons">
+						<span class="notification">
+							<i class="fa-regular fa-bell fa-lg"></i>
+						</span>
+						<img src="./assets/avatar.jpg" alt="">
+					</div>
+				</div>
+        <section>
+          <div class="wrapper">
+            <div class="cart energy">
+              <div class="icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h3>Energy</h3>
+              <div class="progress center-flex">
+                <h3>45%</h3>
+              </div>
+            </div>
+
+            <div class="cart range">
+              <div class="icon">
+                <i class="fa-solid fa-arrows-up-down"></i>
+              </div>
+              <h3>Range</h3>
+              <div class="progress center-flex">
+                <h3>157k%</h3>
+              </div>
+            </div>
+
+            <div class="cart break">
+              <div class="icon">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <h3>Break fluid</h3>
+              <div class="progress center-flex">
+                <h3>9%</h3>
+              </div>
+            </div>
+
+            <div class="cart tear">
+              <div class="icon">
+                <i class="fa-solid fa-fire-flame-simple"></i>
+              </div>
+              <h3>Tire Wear</h3>
+              <div class="progress center-flex">
+                <h3>25%</h3>
+              </div>
+            </div>
+
+            <div class="statistics">
+              <div class="title"><strong>Miles</strong> Statistics</div>
+              <div class="period">
+                <div class="selector">
+                  <a class="active">Day</a>
+                  <a>Week</a>
+                  <a>Month</a>
+                </div>
+                <div>256 Miles</div>
+              </div>
+              <div id="chartdiv"></div>
+            </div>
+
+            <div class="statistics">
+              <div class="title"><strong>Car</strong> Statistics</div>
+              <div class="period">
+                <div class="selector">
+                  <a>Day</a>
+                  <a>Week</a>
+                  <a>Month</a>
+                </div>
+                <div>256 Miles</div>
+              </div>
+              <div id="chartdiv"></div>
+            </div>
+
+            <div class="recommended">
+              <div class="title">
+                <p>64% Recommended</p>
+              </div>
+              <div class="image">
+                <img src="./assets/mini cooper.png" alt="">
+              </div>
+              <h4>Mini Cooper</h4>
+              <div class="details">
+                <div class="icons">
+                  <i class="fa-solid fa-repeat"></i>
+                  <span>132K</span>
+                  <i class="fa-solid fa-gear"></i>
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="cost">
+                  $32/h
+                </div>
+              </div>
+            </div>
+
+            <div class="recommended">
+              <div class="title">
+                <p>74% Recommended</p>
+              </div>
+              <div class="image">
+                <img src="./assets/porsche1.png" alt="">
+              </div>
+              <h4>Porsche 911 Carrera</h4>
+              <div class="details">
+                <div class="icons">
+                </div>
+                <div class="cost">
+                  $28/h
+                </div>
+              </div>
+            </div>
+
+            <div class="recommended">
+              <div class="title">
+                <p>74% Recommended</p>
+              </div>
+              <div class="image">
+                <img src="./assets/jeep.png" alt="">
+              </div>
+              <h4>Jeep</h4>
+              <div class="details">
+                <div>
+                  <div class="icons">
+
+                  </div>
+                  <div class="cost">
+                    $28/h
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        </div>
+      </div>
+
+    
+  </body>
+  <script src="./firstChart.js"></script>
+</html>
