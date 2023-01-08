@@ -96,7 +96,11 @@ ul {
   background-color: white;
   padding: 20px;
 }
-
+@media (max-width: 767px) {
+  .sidebar {
+    width: 70px;
+  }
+}
 .sidebar>div>h3 {
   margin-bottom: 20px;
   margin-top: 0;
@@ -291,4 +295,8 @@ body {
 
 .cart .icons > div > span {
   color: #888;
+}
+
+.cart .heart i.active {
+  color: red;
 }
