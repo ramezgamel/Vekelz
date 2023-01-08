@@ -204,6 +204,10 @@ body {
   padding: 20px;
 }
 
+.page2 {
+  padding: 0 20px;
+}
+
 .page2 .filter {
   display: flex;
   align-items: center;
@@ -246,7 +250,7 @@ body {
 .wrapper {
   display: grid;
   padding: 20px 0; 
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
